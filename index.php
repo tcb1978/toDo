@@ -25,17 +25,17 @@
             <div class="input-group">
                 <input id="item" type="text" class="" placeholder="Enter an activity to do...">
                 <span class="input-group-btn item-add" id="item">
-                    <button id="add" class="btn btn-default activity-add" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <button id="add" class="btn btn-default activity-add center-me" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
                 </span>
             </div><!-- /input-group -->                
             </header>
             <!--uncompleted items-->
             <div class="todo-container">
                 <ul class="todo" id="todo"></ul>
-            <!--completed items-->
-                <ul class="todo" id="completed"></ul>
+                <div class="hide-show-completed-items">
+                    <button id="hideShow" class="btn btn-default hidden" type="button"><i class="fa fa-toggle-on" aria-hidden="true"></i></button>
+                </div>
             </div>
-
             <script src="src/js/main.js"></script>
             <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
             <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
