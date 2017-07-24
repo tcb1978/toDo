@@ -9,12 +9,10 @@ document.getElementById('add').addEventListener('click', function(){
 		document.getElementById('item').value = '';
 	}
 });
-//User presses enter on input, get value
-//add that text to to-do list
-document.getElementById('item');
+var elem = document.getElementById('item');
 	elem.addEventListener('keypress', function(e){
 	var value = document.getElementById('item').value;
-	  if (e.keyCode == 13) {
+	  if (e.keyCode == 13) {  
 	    addItemToDo(value);
 		document.getElementById('item').value = '';
     }
@@ -49,6 +47,16 @@ function completeItem() {
 	var thislineitem = this.parentNode.parentNode;//Gets li
 	console.log(thislineitem);
 	thislineitem.className += 'strike-through ';
+	
+
+    // var item = this.parentNode.parentNode;//Gets li
+    // var parent = item.parentNode;//Gets ul
+    // id = parent.getAttribute('id');//Gets ul id
+
+    // var target = (id === 'todo') ? document.getElementById('completed'):document.getElementById('todo');
+
+    // parent.removeChild(item); //Remove li from current ul
+    // target.insertBefore(item, target.childNodes[0]);// add it to new ul
 }
 
 
