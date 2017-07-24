@@ -129,8 +129,9 @@ ul.todo li div.buttons{
   right: 0;
 }
 
-li.strike-through {
-  text-decoration: line-through;
+ul.todo li.strike-through {
+    text-decoration: line-through;
+    color: red;
 }
 
 ul.todo li div.buttons button {
