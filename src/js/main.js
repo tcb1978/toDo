@@ -9,7 +9,16 @@ document.getElementById('add').addEventListener('click', function(){
 		document.getElementById('item').value = '';
 	}
 });
-
+//User presses enter on input, get value
+//add that text to to-do list
+document.getElementById('item');
+	elem.addEventListener('keypress', function(e){
+	var value = document.getElementById('item').value;
+	  if (e.keyCode == 13) {
+	    addItemToDo(value);
+		document.getElementById('item').value = '';
+    }
+});
 
 //Create new list with items
 function addItemToDo(text) {
@@ -20,6 +29,7 @@ function addItemToDo(text) {
 	var value = document.getElementById('item').value;
 	item.innerHTML = value + innerList;
 	list.insertBefore(item, list.childNodes[0]);
+	
 	// Add click event to remove item
 	var remove = document.getElementById('remove');
 	remove.addEventListener('click', removeItem);
@@ -36,14 +46,9 @@ function removeItem() {
 
 // Add item to 'Completed' list when check button is clicked
 function completeItem() {
-    var item = this.parentNode.parentNode;//Gets li
-    var parent = item.parentNode;//Gets ul
-    id = parent.getAttribute('id');//Gets ul id
-
-    var target = (id === 'todo') ? document.getElementById('completed'):document.getElementById('todo');
-
-    parent.removeChild(item); //Remove li from current ul
-    target.insertBefore(item, target.childNodes[0]);// add it to new ul
+	var thislineitem = this.parentNode.parentNode;//Gets li
+	console.log(thislineitem);
+	thislineitem.className += 'strike-through ';
 }
 
 

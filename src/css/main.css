@@ -1,205 +1,195 @@
-  /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
 
 
-  /**
+/**
 
-  COLORS
-  DARK SEA GREEN:#228B22;
-  GREY:#EDF0F1;
+COLORS
+DARK SEA GREEN:#228B22;
+GREY:#EDF0F1;
 
-  **/
-  @import "~bootstrap/dist/css/bootstrap.min.css";
-  @import "~font-awesome/css/font-awesome.css";
+**/
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
 
-  body {
-    padding: 90px 0px 0px 0px;
-    background: #EDF0F1;
-  }
-
-  body,
-  html {
-    font-family: 'Roboto', sans-serif;
-  }
-
-  .starter-template {
-    padding: 3rem 1.5rem;
-    text-align: center;
-  }
-
-  html {
-    position: relative;
-    min-height: 100%;
-  }
-
-  header{
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    padding: 15px 25px 15px 25px;
-    top:0;
-    left: 0;
-    z-index: 5;
-    background: #228B22;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 0px 2px 4px #228B22;
-  }
-
-  header input {
-    font-size: 15px;
-    font-weight: 400;
-    text-indent: 18px;
-    width: 100%;
-    height: 50px;
-    float: left;
-    background: rgba(255,255,255,0.2);
-    border: 0px;
-    box-shadow:none;
-    outline: none;
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
-    border-radius: .25rem 0 0 .25rem;
-    color:#fff;
-  }
-
-  header input::-webkit-input-placeholder {
-    color:#fff;
-  }
-
-  header input::-moz-input-placeholder {
-    color:#fff;
-  }
-
-  header input::-ms-input-placeholder {
-    color:#fff;
-  }
-
-  button.activity-add,
-  ul.todo li {
-    background: #fff;
-  }
-
-  button.activity-add {
-    height: 50px;
-  }
-
-  i.fa.fa-plus {
-    color: #228B22;
-  }
-
-  .todo-container {
-    width: 100%;
-    float: left;
-    padding: 15px;
-  }
-
-  ul.todo {
-    width: 100%;
-    float:left;
-    text-align: left;
-    list-style: none;
-    padding: 0 0;
-  }
-
-  ul.todo li {
-     width: 100%;
-     height: 50px;
-     float: left;
-     background: #fff;
-     font-size: 14px;
-     font-weight: 500;
-     color: #444;
-     line-height: 22px; 
-     border-radius: 5px;
-     box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
-     margin-bottom: 10px;
-     position: relative;
-     padding: 15px 100px 0 15px;
-  }
-
-  ul.todo li:last-child {
-    margin: 0px
-  }
-
-  ul.todo li div.buttons{
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    top:0;
-    right: 0;
-  }
-
-  ul.todo li div.buttons button {
-    width: 50px;
-    height: 50px;
-    float: left;
-    background:none;
-    border: 0px;
-    float: right;
-    position: relative;
-    box-shadow: none; 
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
-    padding: 0 0;
-  }
-
-  ul.todo li div.buttons button:last-of-type:after {
-    content: '';
-    width: 1px;
-    height: 30px;
-    position: absolute;
-    top:10px;
-    left:0;
-  }
-
-  i.fa.fa-trash-o {
-    font-size: x-large;
-  }
-
-  button.red:hover,
-  i.fa.fa-trash-o:hover {
-    color: red;
-    cursor: pointer;
-    transition: fill 0.2s ease;
-  }
-
-  button.green:hover, 
-  i.fa.fa-check.green:hover {
-    cursor: pointer;
-    transition: fill 0.5s ease;
-    color: #fff;
-    background: #228B22;
-    border: 1px solid #228B22;
-  }
-
-  i.fa.fa-check.green {
-      border: 1px solid #228B22;
-      border-radius: 20px;
-      padding: 10px;
-      color: #228B22;
-  }
-
-  ul#completed .buttons button#complete i.fa.fa-check.green {
-      color: #fff;
-      background: #228B22;
-  }
-
-ul.todo#completed:not(:empty) {
-  padding-top: 60px;
+body {
+  padding: 90px 0px 0px 0px;
+  background: #EDF0F1;
 }
 
-ul.todo#completed:not(:empty):before {
-    border-top:1px solid #228B22;
-    content: '';
-    top: 30px;
-    left: 50%;
-    margin: 0 0 0 -75px;
-    width: 150px;
-    height: 1px;
-    background:#228B22;
-    position: absolute;
-  }
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+header{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  padding: 15px 25px 15px 25px;
+  top:0;
+  left: 0;
+  z-index: 5;
+  background: #228B22;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 2px 4px #228B22;
+}
+
+header input {
+  font-size: 15px;
+  font-weight: 400;
+  text-indent: 18px;
+  width: 100%;
+  height: 50px;
+  float: left;
+  background: rgba(255,255,255,0.2);
+  border: 0px;
+  box-shadow:none;
+  outline: none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  border-radius: .25rem 0 0 .25rem;
+  color:#fff;
+}
+
+header input::-webkit-input-placeholder {
+  color:#fff;
+}
+
+header input::-moz-input-placeholder {
+  color:#fff;
+}
+
+header input::-ms-input-placeholder {
+  color:#fff;
+}
+
+button.activity-add,
+ul.todo li {
+  background: #fff;
+}
+
+button.activity-add {
+  height: 50px;
+}
+
+i.fa.fa-plus {
+  color: #228B22;
+}
+
+.todo-container {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+ul.todo {
+  width: 100%;
+  float:left;
+  text-align: left;
+  list-style: none;
+  padding: 0 0;
+}
+
+ul.todo li {
+   width: 100%;
+   height: 50px;
+   float: left;
+   background: #fff;
+   font-size: 14px;
+   font-weight: 500;
+   color: #444;
+   line-height: 22px; 
+   border-radius: 5px;
+   box-shadow: 0px 1px 2px rgba(44,62,80,0.10);
+   margin-bottom: 10px;
+   position: relative;
+   padding: 15px 100px 0 15px;
+}
+
+ul.todo li:last-child {
+  margin: 0px
+}
+
+ul.todo li div.buttons{
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+li.strike-through {
+  text-decoration: line-through;
+}
+
+ul.todo li div.buttons button {
+  width: 50px;
+  height: 50px;
+  float: left;
+  background:none;
+  border: 0px;
+  float: right;
+  position: relative;
+  box-shadow: none; 
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  padding: 0 0;
+}
+
+ul.todo li div.buttons button:last-of-type:after {
+  content: '';
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  top:10px;
+  left:0;
+}
+
+i.fa.fa-trash-o {
+  font-size: x-large;
+}
+
+button.red:hover,
+i.fa.fa-trash-o:hover {
+  color: red;
+  cursor: pointer;
+  transition: fill 0.2s ease;
+}
+
+i.fa.fa-check.green {
+    border: 1px solid #228B22;
+    border-radius: 20px;
+    padding: 10px;
+    color: #228B22;
+}
+
+li.strike-through i.fa.fa-check.green,
+button.green:hover, 
+i.fa.fa-check.green:hover {
+  cursor: pointer;
+  transition: fill 0.5s ease;
+  color: #fff;
+  background: #228B22;
+  border: 1px solid #228B22;
+}
+
+
+
+
+
+
 
 
 
