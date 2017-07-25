@@ -36,7 +36,12 @@
                     <button id="hideShow" class="btn btn-default hidden" type="button"><i class="fa fa-toggle-on" aria-hidden="true"></i></button>
                 </div>
             </div>
+            <!--main.js-->
             <script src="src/js/main.js"></script>
+            <!--jQuery-->
+            <script src="//code.jquery.com/jquery-3.2.1.js"></script>
+            <script src="/src/js/jquery-3.2.1.js"></script>
+            <script src="/src/js/app.js"></script>
             <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
             <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
             <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

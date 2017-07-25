@@ -130,7 +130,7 @@ ul.todo li div.buttons{
 }
 
 button#hideShow {
-    background: none;
+    background: #fff;
     border: 1px solid #228B22;
     box-shadow: none;
     color: #228B22;
@@ -139,7 +139,7 @@ button#hideShow {
 }
 
 button#hideShow:hover {
-  box-shadow:  10px 10px 5px #EDF0F1;
+  box-shadow: 2px 2px 0px #228B22;
 }
 
 button#hideShow:before {
@@ -150,6 +150,7 @@ button#hideShow:before {
 ul.todo li.strike-through {
     text-decoration: line-through;
     color: red;
+    border: 1px solid #4EA24E;
 }
 
 ul.todo li div.buttons button {

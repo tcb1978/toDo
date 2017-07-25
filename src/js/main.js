@@ -59,12 +59,14 @@ var toggleHideShow = document.getElementById('hideShow');
 		var strikeThroughLists = document.getElementsByTagName('li');
 		for (var i = strikeThroughLists.length - 1; i >= 0; i--) {
 			strikeThroughLists = strikeThroughLists[i];
+			//if li.strike-through is visible show, else hide
 			if (strikeThroughLists.classList.contains('strike-through')) {
 				strikeThroughLists.classList.toggle('hidden');
 			}
 		}
 });
 
+	
 
 
 
