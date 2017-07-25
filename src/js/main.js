@@ -34,10 +34,14 @@ function addItemToDo(text) {
 	// Add Click event for completed items
 	var complete = document.getElementById('complete');
 	complete.addEventListener('click', completeItem);
+	// Add Click event for completed toggle
+	var toggle = document.getElementById('hideShow');
+	complete.addEventListener('click', toggle);
 }
 
 //Remove item when trash is clicked
 function removeItem() {
+	alert('Are you sure you want to remove this item?');
 	var list = document.getElementById('todo');
 	this.parentNode.parentNode.remove(list);
 }
@@ -45,28 +49,15 @@ function removeItem() {
 // If item is marked as completed give show toggle for hide/show
 function completeItem() {
 	var thislineitem = this.parentNode.parentNode;//Gets li
-	thislineitem.className += 'strike-through ';
+	thislineitem.classList.toggle('strike-through');// Add .strike-through
 	if (thislineitem.classList.contains('strike-through')) {
 		var hideShow = document.getElementById('hideShow');
-		hideShow.classList.toggle('hidden');
+		hideShow.classList.remove('hidden');
 	}
 }
 
-// hide/show completed items when toggle click
-// Add Click event for toggle
-var toggleHideShow = document.getElementById('hideShow');
-	toggleHideShow.addEventListener('click', function(){
-		var strikeThroughLists = document.getElementsByTagName('li');
-		for (var i = strikeThroughLists.length - 1; i >= 0; i--) {
-			strikeThroughLists = strikeThroughLists[i];
-			//if li.strike-through is visible show, else hide
-			if (strikeThroughLists.classList.contains('strike-through')) {
-				strikeThroughLists.classList.toggle('hidden');
-			}
-		}
-});
 
-	
+
 
 
 
