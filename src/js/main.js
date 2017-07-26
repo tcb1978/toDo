@@ -24,6 +24,8 @@ function addItemToDo(text) {
 
 	var list = document.getElementById('todo');
 	var item = document.createElement('li');
+	item.className += "column";
+	item.setAttribute('draggable', 'true');
 	var value = document.getElementById('item').value;
 	item.innerHTML = value + innerList;
 	list.insertBefore(item, list.childNodes[0]);
