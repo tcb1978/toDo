@@ -2,9 +2,6 @@
 $(function() {
 	$('#hideShow').on('click', function(){
 		$('li.strike-through').toggleClass('hidden');
-		alert('hi');
 	})
 });
 
-
-// this is a comment
