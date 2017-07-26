@@ -104,7 +104,6 @@ ul.todo li {
    width: 100%;
    height: 50px;
    float: left;
-   background: #fff;
    font-size: 14px;
    font-weight: 500;
    color: #444;
@@ -114,6 +113,7 @@ ul.todo li {
    margin-bottom: 10px;
    position: relative;
    padding: 15px 100px 0 15px;
+   cursor: move;
 }
 
 ul.todo li:last-child {
@@ -211,7 +211,46 @@ i.fa.fa-check.green:hover {
     padding: 50px 0;
 }
 
+/*Draggable Content*/
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
 
+#todo {
+  list-style-type: none;
+}
+
+.column {
+  width: 162px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  cursor: move;
+}
+.column header {
+  height: 20px;
+  width: 150px;
+  color: black;
+  background-color: #ccc;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 10px;
+  border: 2px solid #666666;
+}
+
+.column.dragElem {
+  opacity: 0.4;
+}
+.column.over {
+  //border: 2px dashed #000;
+  border-top: 2px solid blue;
+}
 
 
 
