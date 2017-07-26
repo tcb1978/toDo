@@ -18,6 +18,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <!--stylesheet-->
         <link rel="stylesheet" href="src/css/main.css">
     </head>
     <body>        
@@ -42,6 +43,8 @@
             <script src="//code.jquery.com/jquery-3.2.1.js"></script>
             <script src="/src/js/jquery-3.2.1.js"></script>
             <script src="/src/js/app.js"></script>
+            <!--reorder script-->
+            <script src="/src/js/reorder.js"></script>
             <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
             <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
             <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
