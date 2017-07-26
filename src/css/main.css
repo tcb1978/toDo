@@ -226,14 +226,14 @@ i.fa.fa-check.green:hover {
   list-style-type: none;
 }
 
-.column {
+.draggable {
   width: 162px;
   padding-bottom: 5px;
   padding-top: 5px;
   text-align: center;
   cursor: move;
 }
-.column header {
+.draggable header {
   height: 20px;
   width: 150px;
   color: black;
@@ -244,10 +244,10 @@ i.fa.fa-check.green:hover {
   border: 2px solid #666666;
 }
 
-.column.dragElem {
+.draggable.dragElem {
   opacity: 0.4;
 }
-.column.over {
+.draggable.over {
   //border: 2px dashed #000;
   border-top: 2px solid blue;
 }

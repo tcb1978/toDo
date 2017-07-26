@@ -71,6 +71,6 @@ function addDnDHandlers(elem) {
 
 }
 
-var cols = document.querySelectorAll('#todo .column');
+var cols = document.querySelectorAll('#todo .draggable');
 [].forEach.call(cols, addDnDHandlers);
 
