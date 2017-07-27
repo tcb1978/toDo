@@ -211,28 +211,6 @@ i.fa.fa-check.green:hover {
     padding: 50px 0;
 }
 
-/*Draggable Content*/
-[draggable] {
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  /* Required to make elements draggable in old WebKit */
-  -khtml-user-drag: element;
-  -webkit-user-drag: element;
-}
-
-#todo {
-  list-style-type: none;
-}
-
-.draggable.dragElem {
-  opacity: 0.4;
-}
-.draggable.over {
-  //border: 2px dashed #000;
-  border-top: 2px solid blue;
-}
 
 
 
