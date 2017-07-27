@@ -40,13 +40,6 @@ function addItemToDo(text) {
 	complete.addEventListener('click', toggle);
 }
 
-//Remove item when trash is clicked
-function removeItem() {
-	alert('Are you sure you want to remove this item?');
-	var list = document.getElementById('todo');
-	this.parentNode.parentNode.remove(list);
-}
-
 // If item is marked as completed give show toggle for hide/show
 function completeItem() {
 	var thislineitem = this.parentNode.parentNode;//Gets li
@@ -54,8 +47,21 @@ function completeItem() {
 	if (thislineitem.classList.contains('strike-through')) {
 		var hideShow = document.getElementById('hideShow');
 		hideShow.classList.remove('hidden');
+	} 
+}
+
+//Remove item when trash is clicked
+function removeItem() {
+	alert('Are you sure you want to remove this item?');
+	var list = document.getElementById('todo');
+	this.parentNode.parentNode.remove(list);
+	if ( $('ul#todo li.drag').length < 1 ) {
+		$('#hideShow').removeClass('hidden');
 	}
 }
+
+
+
 
 
 
