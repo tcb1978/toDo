@@ -226,24 +226,6 @@ i.fa.fa-check.green:hover {
   list-style-type: none;
 }
 
-.draggable {
-  width: 162px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  text-align: center;
-  cursor: move;
-}
-.draggable header {
-  height: 20px;
-  width: 150px;
-  color: black;
-  background-color: #ccc;
-  padding: 5px;
-  border-bottom: 1px solid #ddd;
-  border-radius: 10px;
-  border: 2px solid #666666;
-}
-
 .draggable.dragElem {
   opacity: 0.4;
 }
