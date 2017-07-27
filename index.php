@@ -46,6 +46,7 @@
             <!--reorder script-->
             <script src="/src/js/reorder.js"></script>
             <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+            <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
             <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
             <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
             <script>
