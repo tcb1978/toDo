@@ -54,11 +54,12 @@ function completeItem() {
 function removeItem() {
 	alert('Are you sure you want to remove this item?');
 	var list = document.getElementById('todo');
+	var listLength =list.innerHTML;
+	console.log(listLength);
 	this.parentNode.parentNode.remove(list);
-	if ( $('ul#todo li.drag').length < 1 ) {
-		$('#hideShow').removeClass('hidden');
-	}
+	// if (list.legnth) {}
 }
+
 
 
 

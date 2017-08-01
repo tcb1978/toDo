@@ -43,8 +43,6 @@
             <script src="//code.jquery.com/jquery-3.2.1.js"></script>
             <script src="/src/js/jquery-3.2.1.js"></script>
             <script src="/src/js/app.js"></script>
-            <!--reorder script-->
-            <script src="/src/js/reorder.js"></script>
             <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
             <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
             <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
